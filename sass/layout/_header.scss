@@ -1,8 +1,8 @@
 @use "../utilities/background" as *;
 @use "../utilities/color" as *;
 @use "../utilities/breakpoints" as *;
-@use "../componet/input";
-@use "../componet/social-media";
+@use "../component/input";
+@use "../component/social-media";
 
 @use "../vender/navbar";
 
@@ -44,7 +44,9 @@
 
     &_icon_box {
       @include social-media.layout;
-      @include social-media.sprite;
+      *:hover{
+        background-position-y: social-media.$icon--spacing-y;
+      }
     }
   }
 

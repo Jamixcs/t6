@@ -3,9 +3,9 @@
 @use "../utilities/font";
 @use "../utilities/background" as *;
 @use "../utilities/breakpoints" as *;
-@use "../componet/input";
-@use "../componet/button";
-@use "../componet/social-media";
+@use "../component/input";
+@use "../component/button";
+@use "../component/social-media";
 
 
 .footer {
@@ -195,8 +195,13 @@
 
   &_icon_box {
     @include social-media.layout;
-    @include social-media.sprite_hover_opacity;
     justify-content: center;
+    * {
+      background-position-y: social-media.$icon--spacing-y;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 
   .call_us {

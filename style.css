@@ -256,43 +256,29 @@ p {
     flex-direction: row;
     column-gap: 8px;
   }
-  .contact_desktop_icon_box [class^=icon] {
+  .contact_desktop_icon_box :nth-child(1) {
+    background-position-x: 0;
+  }
+  .contact_desktop_icon_box :nth-child(2) {
+    background-position-x: -37.1px;
+  }
+  .contact_desktop_icon_box :nth-child(3) {
+    background-position-x: -74.2px;
+  }
+  .contact_desktop_icon_box :nth-child(4) {
+    background-position-x: -111.3px;
+  }
+  .contact_desktop_icon_box :nth-child(5) {
+    background-position-x: -148.4px;
+  }
+  .contact_desktop_icon_box * {
     display: inline-block;
     width: 28.5px;
     height: 27.5px;
     background-image: url("./images/social.png");
     background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 0;
   }
-  .contact_desktop_icon_box .icon_facebook {
-    background-position-x: 0;
-  }
-  .contact_desktop_icon_box .icon_facebook:hover {
-    background-position-y: -27px;
-  }
-  .contact_desktop_icon_box .icon_twitter {
-    background-position-x: -37.1px;
-  }
-  .contact_desktop_icon_box .icon_twitter:hover {
-    background-position-y: -27px;
-  }
-  .contact_desktop_icon_box .icon_filicker {
-    background-position-x: -74.2px;
-  }
-  .contact_desktop_icon_box .icon_filicker:hover {
-    background-position-y: -27px;
-  }
-  .contact_desktop_icon_box .icon_dribble {
-    background-position-x: -111.3px;
-  }
-  .contact_desktop_icon_box .icon_dribble:hover {
-    background-position-y: -27px;
-  }
-  .contact_desktop_icon_box .icon_rss {
-    background-position-x: -148.4px;
-  }
-  .contact_desktop_icon_box .icon_rss:hover {
+  .contact_desktop_icon_box *:hover {
     background-position-y: -27px;
   }
 }
@@ -894,48 +880,32 @@ p {
   column-gap: 8px;
   justify-content: center;
 }
-.contact_mobile_icon_box [class^=icon] {
+.contact_mobile_icon_box :nth-child(1) {
+  background-position-x: 0;
+}
+.contact_mobile_icon_box :nth-child(2) {
+  background-position-x: -37.1px;
+}
+.contact_mobile_icon_box :nth-child(3) {
+  background-position-x: -74.2px;
+}
+.contact_mobile_icon_box :nth-child(4) {
+  background-position-x: -111.3px;
+}
+.contact_mobile_icon_box :nth-child(5) {
+  background-position-x: -148.4px;
+}
+.contact_mobile_icon_box * {
   display: inline-block;
   width: 28.5px;
   height: 27.5px;
   background-image: url("./images/social.png");
   background-repeat: no-repeat;
-  background-position-x: 0;
-  background-position-y: 0;
 }
-.contact_mobile_icon_box .icon_facebook {
-  background-position-x: 0;
+.contact_mobile_icon_box * {
   background-position-y: -27px;
 }
-.contact_mobile_icon_box .icon_facebook:hover {
-  opacity: 0.5;
-}
-.contact_mobile_icon_box .icon_twitter {
-  background-position-x: -37.1px;
-  background-position-y: -27px;
-}
-.contact_mobile_icon_box .icon_twitter:hover {
-  opacity: 0.5;
-}
-.contact_mobile_icon_box .icon_filicker {
-  background-position-x: -74.2px;
-  background-position-y: -27px;
-}
-.contact_mobile_icon_box .icon_filicker:hover {
-  opacity: 0.5;
-}
-.contact_mobile_icon_box .icon_dribble {
-  background-position-x: -111.3px;
-  background-position-y: -27px;
-}
-.contact_mobile_icon_box .icon_dribble:hover {
-  opacity: 0.5;
-}
-.contact_mobile_icon_box .icon_rss {
-  background-position-x: -148.4px;
-  background-position-y: -27px;
-}
-.contact_mobile_icon_box .icon_rss:hover {
+.contact_mobile_icon_box *:hover {
   opacity: 0.5;
 }
 .contact_mobile .call_us {
