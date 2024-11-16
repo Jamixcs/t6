@@ -1,0 +1,9 @@
+@mixin hidden {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  // -ms-o-box-orient: vertical;
+  // -moz-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  margin: 0;
+}

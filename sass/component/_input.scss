@@ -1,0 +1,17 @@
+@use "../base/color" as *;
+
+@mixin initial-style {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 0.5px solid $grey-400;
+  background-color: $grey-200;
+  font-size: 14px;
+  
+  outline-color:rgb(0, 0, 0);
+  outline-offset: 0;
+  &:focus {
+    outline-color: $theme-green;
+    outline-offset: 0;
+  }
+}

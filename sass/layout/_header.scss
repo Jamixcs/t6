@@ -1,0 +1,62 @@
+@use "../base/background" as *;
+@use "../base/color" as *;
+@use "../base/breakpoints" as *;
+@use "../component/input";
+@use "../component/social-media";
+
+@use "../vender/bootstrap-navbar";
+
+
+// .header 
+header {
+  display: none;
+
+  @include deviceSize($desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-image: $white-lines;
+    background-repeat: repeat;
+    box-shadow: -0.5px -0.5px 6px $black;
+  }
+}
+
+.logo {
+  width: 215px;
+  height: 100%;
+  object-fit: contain;
+
+  @include deviceSize($tablet) {
+    width: 330px;
+  }
+}
+
+.contact_desktop {
+  display: none;
+
+  @include deviceSize($desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 5px;
+
+    &_icon_box {
+      @include social-media.icon-container;
+      *:hover{
+        background-position-y: social-media.$icon--spacing-y;
+      }
+    }
+  }
+
+  .call_us {
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
